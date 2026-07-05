@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
+import { UtensilsCrossed, ShoppingCart, Bike, PartyPopper } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Выбираете блюда",
+    description: "Открываете меню из 30 позиций: хачапури, хинкали, шашлык, лобио и другие грузинские хиты. Добавляете любимое в корзину.",
+    icon: UtensilsCrossed,
   },
   {
-    title: "Коммерческие объекты",
+    title: "Оформляете заказ",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Указываете адрес и удобное время. Оплачиваете онлайн картой или наличными курьеру — как вам удобнее.",
+    icon: ShoppingCart,
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Мы готовим и везём",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Повара готовят блюда с нуля, а курьер доставляет их горячими в термосумке за 60 минут по городу.",
+    icon: Bike,
   },
   {
-    title: "Градостроительство",
+    title: "Наслаждаетесь застольем",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Накрываете стол и погружаетесь в атмосферу грузинского гостеприимства прямо у себя дома.",
+    icon: PartyPopper,
   },
 ]
 
@@ -57,14 +57,14 @@ export function Expertise() {
     <section id="services" ref={sectionRef} className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-20">
-          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
+          <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Как это работает</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Доставка</HighlightedText> в четыре
             <br />
-            практикой
+            простых шага
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            От выбора блюд до горячего застолья — всего час. Мы взяли на себя всё, чтобы вы просто наслаждались вкусом Грузии.
           </p>
         </div>
 

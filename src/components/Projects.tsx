@@ -4,35 +4,35 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Резиденция Светлая",
-    category: "Жилой дом",
-    location: "Москва, Россия",
-    year: "2024",
-    image: "/images/hously-1.png",
+    title: "Хачапури по-аджарски",
+    category: "Выпечка",
+    location: "Сулугуни, яйцо, масло",
+    year: "590 ₽",
+    image: "https://cdn.poehali.dev/projects/47a0ae00-32ee-4a16-b0cf-b82a746af67f/files/5f0616f3-0125-47a6-926d-73645a354a10.jpg",
   },
   {
     id: 2,
-    title: "Павильон Стекло",
-    category: "Коммерческий объект",
-    location: "Санкт-Петербург, Россия",
-    year: "2023",
-    image: "/images/hously-2.png",
+    title: "Хинкали с мясом",
+    category: "Горячее · 5 шт",
+    location: "Говядина, свинина, специи",
+    year: "450 ₽",
+    image: "https://cdn.poehali.dev/projects/47a0ae00-32ee-4a16-b0cf-b82a746af67f/files/2fc52af3-43cf-4ae0-b325-8da997db4991.jpg",
   },
   {
     id: 3,
-    title: "Дом у моря",
-    category: "Жилой дом",
-    location: "Сочи, Россия",
-    year: "2023",
-    image: "/images/hously-3.png",
+    title: "Шашлык из свинины",
+    category: "Мангал",
+    location: "С овощами и гранатом",
+    year: "620 ₽",
+    image: "https://cdn.poehali.dev/projects/47a0ae00-32ee-4a16-b0cf-b82a746af67f/files/95558dfb-a5da-4ea2-b5fd-34264d8debd7.jpg",
   },
   {
     id: 4,
-    title: "Северный приют",
-    category: "Гостиничный комплекс",
-    location: "Казань, Россия",
-    year: "2024",
-    image: "/images/hously-4.png",
+    title: "Лобио с зеленью",
+    category: "Закуски",
+    location: "Фасоль, кинза, специи",
+    year: "320 ₽",
+    image: "https://cdn.poehali.dev/projects/47a0ae00-32ee-4a16-b0cf-b82a746af67f/files/87ecf04e-17b6-43fe-8700-739ad73665e2.jpg",
   },
 ]
 
@@ -68,14 +68,14 @@ export function Projects() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Избранные работы</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Наши проекты</h2>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Хиты меню</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Наше меню</h2>
           </div>
           <a
-            href="#"
+            href="#contact"
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors group"
           >
-            Смотреть все проекты
+            Всё меню — 30 блюд
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>
         </div>
@@ -112,8 +112,15 @@ export function Projects() {
                     {project.category} · {project.location}
                   </p>
                 </div>
-                <span className="text-muted-foreground/60 text-sm">{project.year}</span>
+                <span className="text-lg font-medium text-primary whitespace-nowrap">{project.year}</span>
               </div>
+
+              <a
+                href="#contact"
+                className="mt-4 inline-flex w-full items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-3 text-sm tracking-wide hover:bg-primary/90 transition-colors duration-300"
+              >
+                В корзину
+              </a>
             </article>
           ))}
         </div>

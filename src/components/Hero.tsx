@@ -120,10 +120,11 @@ export function Hero() {
     <section id="hero" ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hously-background.png"
-          alt="Минималистичный архитектурный интерьер"
+          src="https://cdn.poehali.dev/projects/47a0ae00-32ee-4a16-b0cf-b82a746af67f/files/b80df43d-2b37-4250-b5b5-3126bde1ac76.jpg"
+          alt="Грузинская кухня — хинкали и хачапури"
           className="w-full h-full object-cover object-center"
         />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div
@@ -137,25 +138,32 @@ export function Hero() {
         }}
       >
         <div className="mb-72 md:mb-60 lg:mb-80">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-secondary mb-0">{"Архитектурная студия"}</p>
+          <p className="text-sm tracking-[0.3em] uppercase text-center text-orange-200 mb-6">{"Грузинская кухня с доставкой"}</p>
 
           <h1
             ref={titleRef}
-            className="text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.9] lg:text-8xl"
+            className="text-6xl font-medium text-balance text-center text-white mb-8 tracking-tight leading-[0.9] lg:text-8xl"
           >
-            {"Создаем пространства"}
+            {"Вкус Грузии"}
             <br />
-            <span className="text-orange-200">{"для жизни"}</span>
+            <span className="text-orange-300">{"у вас дома"}</span>
           </h1>
-        </div>
-      </div>
 
-      <div className="absolute inset-0 z-20 pointer-events-none">
-        <img
-          src="/images/hously-foreground.png"
-          alt="Мраморная кухонная столешница"
-          className="w-full h-full object-cover object-center"
-        />
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+            <a
+              href="#projects"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary px-8 py-4 text-sm tracking-wide font-medium hover:bg-white/90 transition-colors duration-300"
+            >
+              Смотреть меню
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center gap-2 border border-white/60 text-white px-8 py-4 text-sm tracking-wide hover:bg-white/10 transition-colors duration-300"
+            >
+              Заказать доставку
+            </a>
+          </div>
+        </div>
       </div>
 
       {animationComplete && (
